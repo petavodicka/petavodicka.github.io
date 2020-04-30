@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        
+html {
+    font-size: 100%;
+    font-family: Bahnschrift, sans-serif;
+}
+ 
+body {
+    max-width: 1200px;
+    margin: 2px auto;
+    background-color: black;
+    text-align: center;
+}
+        
+#flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+        
+#map {
+    height: calc(100vh - 8px);
+    width: calc(100vh - 8px);
+    flex: 0 0 auto;
+}
+        
+#sidebar {
+    color: #dddddd;
+    flex: 1 0 300px;
+    min-width: 300px;
+    padding: 5px;
+    position: relative;
+}
+
+h1, #citation {
+    padding: 5px 0;
+}
+
+#citation {
+    font-style: italic;
+}
+
+#routeInfo {
+    margin: 5px 0 5px 5px;
+    overflow: auto;
+    /*the scrollbar in mozilla*/
+    scrollbar-width: thin;
+    scrollbar-color: #999999 #dddddd;
+    /*Edge*/
+    scrollbar-track-color: #ff0000;
+}
+
+/*the scrollbar in webkit browsers*/
+#routeInfo::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px #999999;
+    border-radius: 2px;
+    background-color: #dddddd;
+}
+
+#routeInfo::-webkit-scrollbar {
+    width: 4px;
+    background-color: #000000;
+}
+
+#routeInfo::-webkit-scrollbar-thumb
+{
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 2px #999999;
+    background-color: #999999;
+}
+
+h2 {
+    font-size: 110%;
+    padding: 0;
+}
+
+table {
+    font-size: 90%;
+    text-align: left;
+}
+
+#animationControl {
+    position: absolute;
+    bottom: 10px;
+}
+
+#timeSlider {
+    -webkit-appearance: none;
+    margin-left: 5px;
+    transform: translateY(-23px);
+    height: 4px;
+    border-radius: 2px;
+    background: #dddddd;
+}
+
+/*timeslider in webkit browsers*/
+#timeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #999999;
+    cursor: pointer;
+}
+
+/*time slider in mozilla*/
+#timeSlider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #999999;
+    cursor: pointer;
+}
+        
+.pace {
+    font-size: 100%;
+    font-family: Bahnschrift, sans-serif;
+    width: 50px;
+    background-color: #dddddd;
+    border: none;
+    margin: 1px;
+    cursor: pointer;
+}
+        
+#clock {
+    text-align: right;
+    font-size: 2rem;
+}
+        
+#pause-play {
+    cursor: pointer;
+}
+        
+
+#copybottom {
+    font-size: 75%;
+    padding-top: 5px;
+}
