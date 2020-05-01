@@ -137,7 +137,7 @@ function moveInTime() {
 
 function chronos() {
     //counts the time (miliseconds) and visualizes it in animation controls
-    time += pace*1000/60;
+    time += pace*1000/24;
     const TIME_SLIDER = document.getElementById("timeSlider");
     TIME_SLIDER.value = time.toString();
     const CLOCK = document.getElementById("clock");
